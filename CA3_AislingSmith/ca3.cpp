@@ -5,9 +5,13 @@
 //root->right = 2 root + 2
 //using a balanced tree 
 
+//used class notes, youtube videos and the geeks for geeks website for help with this assignment
+
+
 #include<iostream>
 using namespace std;
 #define capacity 10 //can also define the capacity in the code below as, int capacity = 0;
+
 
 //template<class T>
 //Was unsure of how to makke a binary tree while using a template so I created it without one.
@@ -22,13 +26,16 @@ public:
 	int getParent(int);
 	bool isEmpty();
 	void add(int numLevels);
-	//void add(T item); if using a template, would have used a T item to add to the levels.
+	//void add(T item); //if using a template, would have used a T item to add to the levels.
 	void remove();
 	void printMyTree();
 
 };
 
-BinaryTree::BinaryTree() { //constructor
+//template<class T>
+//BinaryTree<T>::BinaryTree() {
+//If i was able to get the template class working I would have defined the constructor including the template <T>
+BinaryTree::BinaryTree(){ //constructor
 	currentSize = 0;
 }
 
@@ -77,6 +84,8 @@ void BinaryTree::printMyTree() {
 		cout << nodes[i] << ","; 
 	}
 }
+
+
 
 int main() {
 	BinaryTree tree; //creating an instance of the binary tree

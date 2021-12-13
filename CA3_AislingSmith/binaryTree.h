@@ -4,7 +4,7 @@
 using namespace std;
 
 //Using class notes from starter code and youtube videos I was able to create a struct of a node and a balanced binary tree, youtube video links are, https://www.youtube.com/watch?v=i0t63WWkfow
-
+//binary tree created using pointers
 //Binary tree node 
 struct Node {
 	int key;
